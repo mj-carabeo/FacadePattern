@@ -1,0 +1,14 @@
+public class HotelApp {
+    public static void main(String[] args) {
+        FrontDesk frontDesk = new FrontDesk();
+        String plateNumber = "ABC123";
+        int roomNumber = 101;
+        int numberOfCarts = 2;
+
+        // Guest check-in
+        frontDesk.checkIn(plateNumber, roomNumber, numberOfCarts);
+
+        // Guest check-out
+        frontDesk.checkOut();
+    }
+}
