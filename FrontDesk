@@ -1,0 +1,29 @@
+class FrontDesk {
+    private HotelService valet;
+    private HotelService houseKeeping;
+    private HotelService cart;
+
+    public FrontDesk() {
+        this.valet = new Valet("");
+        this.houseKeeping = new HouseKeeping(0);
+        this.cart = new Cart(0);
+    }
+
+    public void checkIn(String plateNumber, int roomNumber, int numberOfCarts) {
+        valet = new Valet(plateNumber);
+        houseKeeping = new HouseKeeping(roomNumber);
+        cart = new Cart(numberOfCarts);
+
+        System.out.println("Checking in the guest.");
+        valet.executeService();
+        houseKeeping.executeService();
+        cart.executeService();
+        System.out.println("Check-in completed.");
+    }
+
+    public void checkOut() {
+        System.out.println("Checking out the guest.");
+        // Additional checkout logic if needed.
+        System.out.println("Check-out completed.");
+    }
+}
