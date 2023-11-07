@@ -23,3 +23,6 @@ In your solution you must provide the following in your Github link account:
   Problem statement (description of the problem. Just copy what is stated here.
   UML Class Diagram
   Uploaded java codes for the solution.
+
+Here is the link to my UML Class Diagram:
+https://drive.google.com/file/d/17iwbiaIPm8ptmkYNU8IhuzxalOQjT3lT/view?usp=sharing
